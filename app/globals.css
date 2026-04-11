@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  --teal: #3E8E9E;
+  --teal-dark: #2F6E7C;
+  --dark: #1C1C1C;
+  --light: #F2EDE6;
+}
+
+body {
+  background: var(--dark);
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Lys modus */
+html.light body {
+  background: #F2EDE6;
+}
+
+html.light main {
+  background: #F2EDE6;
+}
+
+html.light .bg-\[\#1C1C1C\],
+html.light .bg-\[\#1E1E1E\],
+html.light .bg-\[\#111111\] {
+  background: #F2EDE6 !important;
+}
+
+html.light .text-white {
+  color: #1C1C1C !important;
+}
+
+html.light .hero-section .text-white,
+html.light .hero-section h1,
+html.light .hero-section .book-link {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+html.light .text-white\/80 {
+  color: #1C1C1A !important;
+}
+
+html.light .text-white\/50,
+html.light .text-white\/60 {
+  color: #6B6B65 !important;
+}
+
+html.light .text-white\/30 {
+  color: #8A8A82 !important;
+}
+
+html.light .border-\[\#3E8E9E\]\/30 {
+  border-color: rgba(62, 142, 158, 0.3);
+}
+
+html.light .border-white\/30 {
+  border-color: rgba(28, 28, 28, 0.2) !important;
+}
+
+html.light .book-link {
+  color: #1C1C1C;
+  text-shadow: none;
+}
+
+html.light .bg-white\/10 {
+  background: rgba(0,0,0,0.08) !important;
+}
+
+html.light .bg-white\/20 {
+  background: rgba(0,0,0,0.14) !important;
+}
+
+.book-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 767px) {
+  .book-link {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+}
+
+.book-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 30%;
+  height: 1.5px;
+  background: #4EAFC2;
+  transition: width 0.3s ease;
+}
+
+.book-link:hover::after {
+  width: 100%;
+}
+
+.book-link .arrow {
+  display: inline-block;
+  margin-left: 8px;
+  color: #4EAFC2;
+  position: relative;
+  top: 0.1em;
+  transition: transform 0.3s ease;
+}
+
+.book-link:hover .arrow {
+  display: inline-block;
+  transform: translateX(4px);
+}
