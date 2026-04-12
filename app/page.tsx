@@ -99,8 +99,9 @@ export default function Home() {
               <Image
                 src="/album-artwork.jpg"
                 alt="Olav Risan – Making Up For Last Time albumcover"
-                width={256}
-                height={256}
+                width={512}
+                height={512}
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 256px, 192px"
                 className="w-full md:w-64 md:h-64 md:shrink-0 lg:w-48 lg:h-48 lg:shrink-0 aspect-square object-cover shadow-[0_6px_24px_rgba(0,0,0,0.35)]"
               />
               <div className="flex flex-col gap-4 px-5 md:px-10 py-8 md:py-0 lg:py-8">
