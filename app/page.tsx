@@ -92,7 +92,7 @@ export default function Home() {
                 Sterke melodier. Ærlige tekster. Musikk som setter seg.
               </p>
               <p className="text-base leading-relaxed text-white/80 max-w-[60ch]">
-                Olav Risan fra Hønefoss debuterer med «Making Up For Last Time», et album som tar deg med gjennom country, folk, blues og rock. Med backingbandet <strong className="text-white font-semibold">The Way To Go</strong> i ryggen har han skapt noe som føles både personlig og tidløst.
+                Olav Risan fra Hønefoss debuterer med «Making Up For Last Time», et album som tar deg med gjennom country, folk, blues og rock. Med det fremragende backingbandet <strong className="text-white font-semibold">The Way To Go</strong> i ryggen har han skapt noe som føles både personlig og tidløst. Et friskt pust fra Ringerike i Americana-sjangeren!
               </p>
             </div>
 
