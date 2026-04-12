@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Home() {
   return (
@@ -248,13 +249,14 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <div className="flex flex-wrap justify-center gap-x-5 gap-y-1">
+              <div className="flex flex-wrap justify-center gap-x-5 gap-y-1 items-center">
                 <span className="text-xs font-[family-name:var(--font-oswald)] tracking-[0.04em] text-white/30">
                   Foto: AKS Media
                 </span>
                 <a href="https://lilitlabs.no" target="_blank" rel="noopener noreferrer" className="text-xs font-[family-name:var(--font-oswald)] tracking-[0.04em] text-white/30 hover:text-white/60 transition-colors">
                   Nettside av: Lilit Labs™
                 </a>
+                <ThemeToggle />
               </div>
             </footer>
 
