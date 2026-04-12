@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(pandoc \"C:\\\\Portfolio\\\\Projects\\\\Risan\\\\NETTSIDE TEKST.docx\" -o /tmp/risan_text.md)",
-      "Read(//tmp/**)",
-      "Bash(git -C \"C:\\\\Portfolio\\\\Projects\\\\Risan\" status)"
-    ]
-  }
-}
