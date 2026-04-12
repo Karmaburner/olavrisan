@@ -49,6 +49,7 @@ export default function Home() {
               <a
                 href="mailto:post@olavrisan.no?subject=Booking%20–%20Olav%20Risan"
                 className="book-link font-[family-name:var(--font-oswald)] mt-5"
+                style={{ transform: 'translateY(-5px)' }}
               >
                 Book nå<span className="arrow">
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
