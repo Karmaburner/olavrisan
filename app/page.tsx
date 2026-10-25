@@ -253,7 +253,7 @@ export default function Home() {
                 <span className="text-xs font-[family-name:var(--font-oswald)] tracking-[0.04em] text-white/60">
                   Foto: AKS Media
                 </span>
-                <a href="https://lilitlabs.no" target="_blank" rel="noopener noreferrer" className="text-xs font-[family-name:var(--font-oswald)] tracking-[0.04em] text-white/60 hover:underline underline-offset-2">
+                <a href="https://www.lilitlabs.com" target="_blank" rel="noopener noreferrer" className="text-xs font-[family-name:var(--font-oswald)] tracking-[0.04em] text-white/60 hover:underline underline-offset-2">
                   Nettside av: Lilit Labs
                 </a>
                 <ThemeToggle />
