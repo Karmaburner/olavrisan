@@ -6,33 +6,27 @@ export default function Home() {
   return (
     <main className="bg-[#1C1C1C] font-[family-name:var(--font-inter)]">
 
-      {/* Bakgrunnsbilde — mobil kun */}
-      <div className="fixed inset-0 z-0 lg:hidden">
-        <Image
-          src="/olavbilde.jpg"
-          alt="Olav Risan – Americana-artist fra Hønefoss"
-          fill
-          priority
-          className="object-cover object-[center_20%]"
-          style={{ filter: "grayscale(15%) contrast(1.05)" }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-[#1C1C1C]" />
-      </div>
-
       {/* Desktop: to kolonner | Mobil: normal flow */}
       <div className="lg:grid lg:grid-cols-2 lg:max-w-[1700px] lg:mx-auto">
 
         {/* Venstre kolonne — bilde (desktop) / full hero (mobil) */}
         <div className="lg:sticky lg:top-0 lg:h-screen lg:relative">
-          {/* Desktop bilde — normalt block-element, fyller grid-cellen */}
-          <Image
-            src="/olavbilde.jpg"
-            alt="Olav Risan – Americana-artist fra Hønefoss"
-            fill
-            priority
-            className="hidden lg:block object-cover object-[center_42%]"
-            style={{ filter: "grayscale(15%) contrast(1.05)" }}
-          />
+          {/* Ett bilde for begge bredder: ligger fast bak alt på mobil og fyller venstre kolonne
+              på desktop. Før var det to, så nettleseren forhåndslastet bildet to ganger og hentet
+              desktop-versjonen i full bredde. sizes sier hvor bredt bildet faktisk vises. */}
+          <div className="fixed inset-0 z-0 lg:absolute">
+            <Image
+              src="/olavbilde.jpg"
+              alt="Olav Risan, Americana-artist fra Hønefoss"
+              fill
+              preload
+              sizes="(min-width: 1024px) min(50vw, 850px), 100vw"
+              className="object-cover object-[center_20%] lg:object-[center_42%]"
+              style={{ filter: "grayscale(15%) contrast(1.05)" }}
+            />
+            {/* Gradient overlay — kun mobil */}
+            <div className="lg:hidden absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-[#1C1C1C]" />
+          </div>
           {/* Gradient overlay — kun desktop */}
           <div className="hidden lg:block absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#111111]" />
           <div className="hidden lg:block absolute inset-y-0 right-0 w-32 bg-gradient-to-r from-transparent to-[#111111]" />
@@ -100,7 +94,7 @@ export default function Home() {
             <div className="border-t border-[#3E8E9E]/30 flex flex-col md:flex-row md:items-center lg:px-10 lg:py-10 lg:gap-8">
               <Image
                 src="/album-artwork.jpg"
-                alt="Olav Risan – Making Up For Last Time albumcover"
+                alt="Albumcoveret til Making Up For Last Time av Olav Risan"
                 width={512}
                 height={512}
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 256px, 192px"

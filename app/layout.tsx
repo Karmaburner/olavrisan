@@ -29,11 +29,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://olavrisan.no"),
-  title: "Olav Risan – Americana-artist fra Hønefoss | Making Up For Last Time",
-  description: "Olav Risan debuterer med albumet Making Up For Last Time — en reise gjennom country, folk og blues. Norsk Americana fra Hønefoss på sitt beste.",
+  title: "Olav Risan · Americana-artist fra Hønefoss · Making Up For Last Time",
+  description: "Olav Risan debuterer med albumet Making Up For Last Time, en reise gjennom country, folk og blues. Norsk Americana fra Hønefoss på sitt beste.",
   openGraph: {
-    title: "Olav Risan – Making Up For Last Time",
-    description: "Olav Risan debuterer med albumet Making Up For Last Time — en reise gjennom country, folk og blues. Norsk Americana fra Hønefoss på sitt beste.",
+    title: "Olav Risan · Making Up For Last Time",
+    description: "Olav Risan debuterer med albumet Making Up For Last Time, en reise gjennom country, folk og blues. Norsk Americana fra Hønefoss på sitt beste.",
     type: "website",
     locale: "nb_NO",
     images: [
@@ -41,13 +41,13 @@ export const metadata: Metadata = {
         url: "/album-artwork.jpg",
         width: 1200,
         height: 1200,
-        alt: "Olav Risan – Making Up For Last Time albumcover",
+        alt: "Albumcoveret til Making Up For Last Time av Olav Risan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Olav Risan – Making Up For Last Time",
+    title: "Olav Risan · Making Up For Last Time",
     description: "Norsk Americana fra Hønefoss. Debutalbum ute nå.",
     images: ["/album-artwork.jpg"],
   },
