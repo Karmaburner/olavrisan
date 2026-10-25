@@ -1,32 +1,30 @@
 import type { Metadata } from "next";
-import { Oswald, Inter, Manrope, Playfair_Display } from "next/font/google";
+import { Oswald, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import ThemeToggle from "./ThemeToggle";
 
+// Oswald: navnet og overskriftene. Lastes først, siden navnet er det største på mobil.
 const oswald = Oswald({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-oswald",
 });
 
+// Inter: brødteksten. Kursiv brukes ikke, så den lastes ikke.
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
-  style: ["normal", "italic"],
   variable: "--font-inter",
 });
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-manrope",
-});
-
+// Playfair: bare «Sterke melodier ...» i kursiv, langt nede på siden.
+// preload: false, så den ikke konkurrerer med navnet og bildet på mobil.
 const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["400", "500"],
-  style: ["normal", "italic"],
+  weight: ["400"],
+  style: ["italic"],
   variable: "--font-playfair",
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -82,7 +80,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="no" className={`${oswald.variable} ${inter.variable} ${manrope.variable} ${playfair.variable}`}>
+    <html lang="no" className={`${oswald.variable} ${inter.variable} ${playfair.variable}`}>
       <head>
         <script
           type="application/ld+json"

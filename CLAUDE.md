@@ -3,7 +3,7 @@
 ## Stack
 - Next.js 16.2.2 (Turbopack), React 19.2.4, TypeScript
 - Tailwind CSS v4 (`@import "tailwindcss"` i globals.css)
-- Fonter: Oswald + Source Serif 4 via `next/font/google`
+- Fonter via `next/font/google`: Oswald (navn og overskrifter), Inter (brødtekst) og Playfair Display (én kursiv linje, `preload: false`)
 
 ## Viktig – Windows/WSL lightningcss-feil
 `npm install` fra WSL installerer Linux-binaries. Hvis du får feil om manglende `.node`-fil:
