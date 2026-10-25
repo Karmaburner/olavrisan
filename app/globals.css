@@ -12,6 +12,15 @@ body {
   font-family: var(--font-inter), sans-serif;
 }
 
+/* Blågrønn tekst og lenker: lysere på mørk bakgrunn, mørkere på lys. Begge gir over 4,5:1 i kontrast */
+.teal-tekst {
+  color: #4EAFC2;
+}
+
+html.light .teal-tekst {
+  color: #2F6E7C;
+}
+
 /* Lys modus */
 html.light body {
   background: #F2EDE6;
