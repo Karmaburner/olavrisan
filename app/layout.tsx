@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "MusicArtist",
+  "@type": "MusicGroup",
   name: "Olav Risan",
   genre: ["Americana", "Country", "Folk", "Blues"],
   url: "https://olavrisan.no",
@@ -65,7 +65,7 @@ const jsonLd = {
   album: {
     "@type": "MusicAlbum",
     name: "Making Up For Last Time",
-    byArtist: { "@type": "MusicArtist", name: "Olav Risan" },
+    byArtist: { "@type": "MusicGroup", name: "Olav Risan" },
   },
   sameAs: [
     "https://open.spotify.com/artist/0hSiuxLYerbqDcySdrxrlo",
